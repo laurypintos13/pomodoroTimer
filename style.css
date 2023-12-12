@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+    user-select: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: #dc6874;
+
+}
+.container{
+    background-color: #dc6874;
+    
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container p{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.timerBtn button{
+    margin: 0px 20px;
+    border-radius: 10px;
+    background-color: #dc6874;
+    color: rgb(255, 209, 209);
+  
+}
+.numberPomodoro{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+}
+.tomatoBtns{
+    padding: 20px;
+}
+.tomatoBtns button{
+    margin: 20px 10px;
+    border: transparent;
+    background-color: #f27581;
+    color: rgb(28, 28, 28);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+.allReset{
+    border: transparent;
+    padding: 10px;
+    background-color: #ed5e6d;
+    border-radius: 10px;
+
+}
+.tomatoImgAnimation{
+    animation-name: moveImg;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveImg{
+    0%{ transform: scale(1); }
+    25%{transform: scale(0.90); }
+    50%{ transform: scale(1);  }
+    75%{ transform: scale(0.9);  }
+    100%{ transform: scale(1);  }
+}
+
+@media (max-width: 806px) {
+    .container p{
+        font-size: 20px;
+    }
+    img{
+        height: 350px;
+        width: 350px;
+    }
+    .tomatoTimer p{
+        font-size: 50px;
+    }
+    .tomatoBtns {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .tomatoBtns button{
+        margin: 5px 10px;}
+}
