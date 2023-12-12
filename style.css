@@ -2,9 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
     user-select: none;
     font-family: sans-serif;
+    
 }
 body{
     background-color: #dc6874;
@@ -12,7 +12,6 @@ body{
 }
 .container{
     background-color: #dc6874;
-    
     width: 100%;
     min-height: 100vh;
     display:flex;
@@ -77,17 +76,18 @@ body{
         font-size: 20px;
     }
     img{
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
     .tomatoTimer p{
         font-size: 50px;
     }
     .tomatoBtns {
-        margin: 20px 0;
+        margin: 10px 0;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 15px;
     }
     .tomatoBtns button{
         margin: 5px 10px;}
